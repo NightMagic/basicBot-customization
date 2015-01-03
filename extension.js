@@ -92,7 +92,7 @@
         rulesLink: "http://pastebin.com/iZmy5Lwt",
         themeLink: null,
         fbLink: null,
-        youtubeLink: "www.yotuube.com/skyasi,
+        youtubeLink: "www.yotuube.com/skyasi",
         website: "www.twitch.tv/skyasi",
         intervalMessages: [],
         messageInterval: 5,
