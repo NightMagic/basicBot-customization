@@ -64,7 +64,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me The link to \"TheAfterStream\" is twitch.tv/theafterstream it will always be live after Sky's stream, where she tends to hang out after her stream ends!");
+                    API.sendChat("/me The link to \"TheAfterStream\" is http://twitch.tv/theafterstream it will always be live after Sky's stream, where she tends to hang out after her stream ends!");
                 }
             }
         };
