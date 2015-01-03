@@ -45,7 +45,7 @@
             }
         };
         bot.commands.commandCommand = {
-            command: 'commands',  //The command to be called. With the standard command literal this would be: !bacon
+            command: 'command',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -81,7 +81,7 @@
             }
         };
         bot.commands.exuCommand = {
-            command: 'TAS',  //The command to be called. With the standard command literal this would be: !bacon
+            command: 'exu',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -93,7 +93,7 @@
             }
         };
         bot.commands.twitCommand = {
-            command: 'Twitter',  //The command to be called. With the standard command literal this would be: !bacon
+            command: 'twitter',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
