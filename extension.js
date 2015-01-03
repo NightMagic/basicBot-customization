@@ -44,18 +44,6 @@
                 }
             }
         };
-        bot.commands.commandCommand = {
-            command: 'command',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("/me You can find all my commands here: https://github.com/Exuviax/plug.dj-Bot-Commands/blob/master/commands.md");
-                }
-            }
-        };
         bot.commands.streamCommand = {
             command: 'stream',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
@@ -165,6 +153,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/Exuviax/basicBot/master/basicBot.js', extend);
 
 }).call(this);
