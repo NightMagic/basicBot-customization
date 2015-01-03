@@ -44,6 +44,66 @@
                 }
             }
         };
+        bot.commands.commandCommand = {
+            command: 'commands',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me You can find all my commands here: https://github.com/Exuviax/plug.dj-Bot-Commands/blob/master/commands.md");
+                }
+            }
+        };
+        bot.commands.streamCommand = {
+            command: 'stream',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me Go check out Skyasi's stream! www.twitch.tv/exuviax");
+                }
+            }
+        };
+        bot.commands.tasCommand = {
+            command: 'TAS',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me The link to \"TheAfterStream\" is twitch.tv/theafterstream it will always be live after Sky's stream, where she tends to hang out after her stream ends!");
+                }
+            }
+        };
+        bot.commands.exuCommand = {
+            command: 'TAS',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me Exu is my lord and humble creator!");
+                }
+            }
+        };
+        bot.commands.twitCommand = {
+            command: 'Twitter',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me You can follow Skyasi over on twitter here: https://twitter.com/skyasi");
+                }
+            }
+        };
 
         //Load the chat package again to account for any changes
         bot.loadChat();
