@@ -1,13 +1,10 @@
-{
-    "1":{
-        "mid": "1:OPsongID1"
+[
+    {
+        "title": "Darude - Sandstorm",
+        "author": "Darude",
     },
-    "2":{
-        "title": "This is a OP song",
-        "author": "The OP band",
-        "mid": "1:OPsongID2"
-    },
-    "3":{
-        "mid": "1:OPsongID3"
+    {
+        "title": "Rick Astley - Never Gonna Give You Up",
+        "author": "Rick Astley",
     }
-}
+]
